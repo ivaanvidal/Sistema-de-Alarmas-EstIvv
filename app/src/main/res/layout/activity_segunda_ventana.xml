@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SegundaVentana">
+
+    <Button
+        android:id="@+id/btncerrarSesion"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="134dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="34dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginStart="243dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/cerrar_sesi_n"
+        app:layout_constraintBottom_toTopOf="@+id/txtBienvenido"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.896"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/txtBienvenido"
+        style="@android:style/TextAppearance.DeviceDefault.SearchResult.Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:layout_marginTop="19dp"
+        android:text="@string/bienvenido_al_sistemas"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        app:layout_constraintBottom_toTopOf="@+id/txtEstado"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtUsuarioWeb" />
+
+    <TextView
+        android:id="@+id/txtEstado"
+        style="@android:style/Widget.Material.TextView.SpinnerItem"
+        android:layout_width="wrap_content"
+        android:layout_height="22dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="112dp"
+        android:layout_marginStart="74dp"
+        android:layout_marginTop="9dp"
+        android:text="@string/el_estado_actual_es"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="@android:color/background_dark"
+        app:layout_constraintBottom_toTopOf="@+id/txtEstadoBd"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtUsuarioWeb"
+        app:layout_constraintVertical_bias="0.794" />
+
+
+    <ImageView
+        android:id="@+id/txtEstadoBd"
+        android:layout_width="212dp"
+        android:layout_height="183dp"
+        android:layout_marginBottom="11dp"
+        android:layout_marginEnd="116dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="72dp"
+        android:contentDescription="@string/imagen_estado"
+        app:layout_constraintBottom_toTopOf="@+id/btnDesactivar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.425"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtBienvenido" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="20dp" />
+
+    <Button
+        android:id="@+id/btnDesactivar"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="228dp"
+        android:layout_height="56dp"
+        android:layout_marginBottom="48dp"
+        android:layout_marginEnd="108dp"
+        android:layout_marginStart="108dp"
+        android:layout_marginTop="11dp"
+        android:enabled="false"
+        android:text="@string/desactivar_alarma"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtEstadoBd"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/txtUsuarioWeb"
+        style="@android:style/TextAppearance.DeviceDefault.SearchResult.Title"
+        android:layout_width="135dp"
+        android:layout_height="27dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="27dp"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/txtEstado"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/guideline" />
+
+</android.support.constraint.ConstraintLayout>

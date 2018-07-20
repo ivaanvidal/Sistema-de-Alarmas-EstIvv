@@ -1,0 +1,34 @@
+<resources>
+
+    <string name="app_name">Sistema de Alarmas</string>
+    <string name="logoubb">logoubb</string>
+    <string name="usuario">Usuario</string>
+    <string name="password">Password</string>
+    <string name="entrar">Entrar</string>
+    <string name="ingreso_al_sistema">Ingreso al Sistema</string>
+    <string name="title_activity_acceso_confirmado">Bienvenido al Sistema</string>
+    <string name="no_cerrar_sesi_n">No Cerrar Sesión</string>
+    <string name="title_activity_ingreso">Ingreso</string>
+    <string name="todo">TODO</string>
+    <string name="cerrar_sesi_n">Cerrar Sesión</string>
+    <string name="retroceder">Retroceder</string>
+    <string name="desactivar">Desactivar</string>
+    <string name="el_estado_actual_del_sistema_es">El Estado Actual del Sistema es:</string>
+    <string name="salir">Salir</string>
+    <string name="empezar">Empezar</string>
+    <string name="a_la_espera">A la espera</string>
+    <string name="desactivar_alarma">Desactivar Alarma</string>
+    <string name="esperando_inicio_del_sistema">Esperando Inicio del Sistema...</string>
+    <string name="el_estado_actual_es">El Estado Actual es:</string>
+    <string name="imagen_estado">Imagen Estado</string>
+    <string name="bienvenido_al_sistemas">Bienvenido al Sistema</string>
+    <string name="nickname">Nickname</string>
+    <string name="contrase_a">Contraseña</string>
+    <string name="registrar_usuario">Registrar Usuario</string>
+    <string name="email">Email</string>
+    <string name="volver">Volver</string>
+    <string name="recuperar">Recuperar</string>
+    <string name="escribe_tu_email_para_restablecer_tu_contrase_a">Escribe tu Email para restablecer tu Contraseña</string>
+    <string name="default_notification_channel_id">sistema_de_alarmas</string>
+
+</resources>
