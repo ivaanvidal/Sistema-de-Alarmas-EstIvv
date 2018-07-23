@@ -135,16 +135,16 @@ public class Servicio extends Service {
                     }
                 }
 
-                    if (resultadoFinal.equals("0")) {
+                    if (resultadoFinal.equals("D")) {
                         //** si el arduino cambia el valor del estado
                         //** aqui se detecta, se desactiva la alarma
                         //** y se vuelve a iniciar la funcion Consultar
-                        Log.i("CONSULTA", "VALOR=0");
+                        Log.i("CONSULTA", "VALOR=DESACTIVADA");
                         DesactivarAlarma();
 
                     }else {
-                        if (resultadoFinal.equals("1")){
-                            Log.i("CONSULTA", "VALOR=1");
+                        if (resultadoFinal.equals("A")){
+                            Log.i("CONSULTA", "VALOR=ACTIVADA");
                         //** carga la imagen de Peligro en la Actividad Segunda Ventana
                         SegundaVentana.texto.setImageResource(R.drawable.peligro);
                         //** activa el boton desactivar para poder ser presionado

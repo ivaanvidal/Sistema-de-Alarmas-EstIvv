@@ -203,7 +203,7 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
 
     public static void crearDatosMysql(){
         RequestQueue requestQueue = Volley.newRequestQueue(Login.getAppContext());
-        String creardatos = "https://ivanvidalsepulveda.000webhostapp.com/insertarDatos.php?email="+USUARIOWEB+"&nickname="+Registro.nickname+"&estado=0&token="+FirebaseInstanceId.getInstance().getToken();
+        String creardatos = "https://ivanvidalsepulveda.000webhostapp.com/insertarDatos.php?email="+USUARIOWEB+"&nickname="+Registro.nickname+"&estado=D&token="+FirebaseInstanceId.getInstance().getToken();
         StringRequest stringRequest = new StringRequest(Request.Method.GET, creardatos, new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {
@@ -222,7 +222,7 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
 
     public static void actualizarDatosMysql(){
         RequestQueue requestQueue = Volley.newRequestQueue(Login.getAppContext());
-        String actualizardatos = "https://ivanvidalsepulveda.000webhostapp.com/actualizarDatos.php?email="+USUARIOWEB+"&estado=0&token="+FirebaseInstanceId.getInstance().getToken();
+        String actualizardatos = "https://ivanvidalsepulveda.000webhostapp.com/actualizarDatos.php?email="+USUARIOWEB+"&estado=D&token="+FirebaseInstanceId.getInstance().getToken();
         StringRequest stringRequest = new StringRequest(Request.Method.GET, actualizardatos, new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {
